@@ -1,0 +1,68 @@
+/* Make the page take full height and stack elements vertically */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+
+/* Main content area that pushes footer down */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers horizontally */
+}
+
+/* Header styling */
+.header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Navigation links */
+#navigation > a {
+    color: rgb(14, 16, 16);
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: larger;
+}
+
+#nav a{
+     color: rgb(14, 16, 16);
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: larger;
+    margin-left: 20px;
+}
+
+#nav{
+    border-radius: 10px;
+    border-style: outset;
+    background-color: rgba(150, 154, 154, 0.214);
+    width: 30%;
+
+
+}
+
+
+/* Body text styling */
+#bodytext {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Footer sticks to bottom */
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+#LoginDetails{
+    display: inline-block;
+    margin: auto;
+}

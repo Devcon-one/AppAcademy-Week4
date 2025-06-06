@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning JS</title>
+    <style>
+        body{
+        background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="navigation">
+            <a href="password.html">Conditionals</a>
+            <a href="functions.html">Functions</a>
+        </nav>
+    </header>
+<!--=============================BODY ==============================-->
+<div class="main-content">
+<div id="bodytext">
+
+        <h1 id="heading1"></h1>
+        <p id="paragraph1"></p>
+        <p id="paragraph2"></p>
+    </div>
+
+</div>  
+
+
+<!--============================= JS  ==============================-->
+    <script>
+        var text1;
+        var text2;
+        var text3;
+        var text4;
+        var num1 = 10;
+        var num2 = 70;
+
+        text1 = 'Hello World!';
+        text2 = 'Built for FNB APP Academy';
+        text3 = 'Fullstack dev seems cool';
+        text4 = 'Welcome';
+
+        document.getElementById('heading1').innerHTML = (text4);
+        document.getElementById('paragraph1').innerHTML = (text2);
+        document.getElementById('paragraph2').innerHTML = (num1 + ' X ' + num2 + '=' + num1 * num2);
+
+    </script>
+
+
+
+<footer >
+    <p class="footer">© Siphelele Msane 2025 | <a href="https://github.com/Devcon-one">Github Profile</a></p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="style" href="style.css">
+    <title>Functions</title>
+</head>
+<body>
+    <h1 id="Heading" onclick="TextChange()">JavaScript</h1>
+    <p id="Addition">Addition</p>
+    <p id="AddReturn"></p>
+
+
+    <script>
+        /* Invoke Addition function*/
+        AddNum(200,3);
+        document.getElementById('AddReturn').innerHTML = AddR(3000,5600);
+
+
+        function TextChange() {
+
+            var heading = document.getElementById("Heading");
+
+            if (heading.innerHTML == 'JavaScript') {
+                heading.innerHTML = 'Is Awesome';
+            }
+            else {
+                heading.innerHTML = 'JavaScript';
+
+            };
+        };
+
+        function AddNum(num1, num2){
+            document.getElementById('Addition').innerHTML = num1 + num2;
+        };
+
+        function AddR(num1,num2){
+            return num1 + num2;
+        }
+    </script>
+
+
+</body>
+</html>
